@@ -6,7 +6,7 @@
 
 .aboutContent {
   margin-top: 137px;
-  width: 582px;
+  /* width: 582px; */
 }
 
 .heading {
@@ -80,14 +80,33 @@
 }
 
 @media screen and (max-width: 950px) {
-  .illustration {
-    width: 350px;
-    height: 326px;
-    margin-top: 77px;
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 30px;
   }
 
-  .about {
-    padding: 0 30px;
+  .aboutImg {
+    width: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .illustration {
+    width: 250px;
+    height: 276px;
+    margin-top: -10px;
+  }
+
+  .aboutContent {
+    margin-top: -178px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .paragraph {
+    width: 100%;
   }
 }
 
@@ -106,8 +125,14 @@
   }
 
   .paragraph {
-    width: 347px;
+    width: 100%;
     font-size: 20px;
+  }
+
+  .aboutContent {
+    margin-top: -178px;
+    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
@@ -126,7 +151,7 @@
   }
 
   .paragraph {
-    width: 307px;
+    width: 100%;
     font-size: 17px;
   }
 }
@@ -135,7 +160,7 @@
   .illustration {
     width: 157px;
     height: 184px;
-    margin-top: 107px;
+    margin-top: 47px;
   }
 
   .about {
@@ -148,10 +173,16 @@
     /* width: 67px; */
   }
 
+  .aboutContent {
+    margin-top: -178px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
   .paragraph {
-    width: 187px;
+    width: 100%;
     font-size: 16px;
-    margin-top: 44px;
+    margin-top: 24px;
   }
 
   .contactBtn {
@@ -173,5 +204,15 @@
 
   .container {
     margin-top: -89px;
+  }
+
+  .about {
+    padding: 0 30px;
+  }
+
+  .aboutContent {
+    margin-top: -178px;
+    width: 100%;
+    margin-bottom: 120px;
   }
 }
