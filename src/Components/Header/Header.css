@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.844);
+  height: 75px;
+  padding: 0 124px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 67px;
+  height: 49px;
+}
+
+.nav {
+  display: flex;
+}
+
+.list {
+  display: flex;
+}
+
+.listItem {
+  font-size: 16px;
+  font-weight: 800;
+  list-style: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  display: none;
+  position: absolute;
+  right: 95px;
+  top: 12px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.menuIcon {
+  padding: 10px;
+  width: 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.crossIcon {
+  padding: 10px;
+  width: 30px;
+  background-color: aliceblue;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  ul {
+    margin: 0;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 300px;
+  }
+
+  .list {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    padding: 0;
+  }
+
+  .listItem {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.555);
+    color: blanchedalmond;
+    margin-right: 0px;
+  }
+
+  .listItem:nth-child(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.555);
+    margin-top: 50px;
+  }
+}

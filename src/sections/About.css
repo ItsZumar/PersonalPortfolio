@@ -1,0 +1,177 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 124px;
+}
+
+.aboutContent {
+  margin-top: 137px;
+  width: 572px;
+}
+
+.heading {
+  font-size: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.paragraph {
+  width: 447px;
+  font-size: 28px;
+  color: white;
+}
+
+.contactBtn {
+  width: 179px;
+  height: 46px;
+  background-color: #0081ff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.aboutImg {
+  width: 478px;
+  height: 476px;
+  margin-top: 77px;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+  .illustration {
+    width: 430px;
+    height: 420px;
+    margin-top: 57px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .illustration {
+    width: 430px;
+    height: 420px;
+    margin-top: 77px;
+  }
+
+  .about {
+    padding: 0 70px;
+  }
+
+  .heading {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .paragraph {
+    width: 447px;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .illustration {
+    width: 350px;
+    height: 326px;
+    margin-top: 77px;
+  }
+
+  .about {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .illustration {
+    width: 257px;
+    height: 284px;
+  }
+
+  .about {
+    padding: 0 80px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .paragraph {
+    width: 347px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .illustration {
+    width: 200px;
+    height: 220px;
+  }
+
+  .about {
+    padding: 0 80px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    width: 307px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .illustration {
+    width: 157px;
+    height: 184px;
+    margin-top: 107px;
+  }
+
+  .about {
+    padding: 0 30px;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin-top: -22px;
+    /* width: 67px; */
+  }
+
+  .paragraph {
+    width: 187px;
+    font-size: 16px;
+    margin-top: 44px;
+  }
+
+  .contactBtn {
+    width: 105px;
+    height: 29px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aboutContent {
+    margin-top: 140px;
+    width: 665px;
+  }
+
+  .heading {
+    font-size: 19px;
+  }
+
+  .container {
+    margin-top: -89px;
+  }
+}
