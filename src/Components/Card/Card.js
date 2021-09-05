@@ -1,15 +1,15 @@
 import React from "react";
 import "./Card.css";
-import location from "../../Icons/placeholder.svg";
-import email from "../../Icons/mail.svg";
-import phone from "../../Icons/telephone.svg";
+import { MdLocationOn } from "react-icons/md";
+import { AiFillMail } from "react-icons/ai";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Card() {
   return (
     <div className="cardCon">
       <div className="card">
-        <div className="iconCon">
-          <img src={location} alt="#" className="icons" />
+        <div className="iconCon1">
+          <MdLocationOn className="icons" />
         </div>
         <div className="detailCon">
           <span className="cardHeading">Adress</span>
@@ -17,8 +17,8 @@ function Card() {
         </div>
       </div>
       <div className="card">
-        <div className="iconCon">
-          <img src={email} alt="#" className="icons" />
+        <div className="iconCon2">
+          <AiFillMail className="icons" />
         </div>
         <div className="detailCon">
           <span className="cardHeading">Email</span>
@@ -26,8 +26,8 @@ function Card() {
         </div>
       </div>
       <div className="card">
-        <div className="iconCon">
-          <img src={phone} alt="#" className="icons" />
+        <div className="iconCon3">
+          <FaPhoneAlt className="icons" />
         </div>
         <div className="detailCon">
           <span className="cardHeading">Phone Number</span>

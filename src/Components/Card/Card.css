@@ -16,10 +16,32 @@
   border-radius: 3px;
 }
 
-.iconCon {
+.iconCon1 {
   width: 54px;
   height: 54px;
-  background-color: white;
+  background-color: #66026f;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.iconCon2 {
+  width: 54px;
+  height: 54px;
+  background-color: #026f54;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.iconCon3 {
+  width: 54px;
+  height: 54px;
+  background-color: #ca6d00;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -34,7 +56,8 @@
 
 .icons {
   width: 32px;
-  height: 32px;
+  height: 35px;
+  color: white;
 }
 
 .cardHeading {

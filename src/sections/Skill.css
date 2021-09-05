@@ -1,0 +1,41 @@
+.skills {
+  padding: 20px 124px;
+}
+
+.SkillHeading {
+  font-size: 32px;
+  color: black;
+}
+
+.style {
+  width: 500px;
+  height: 28px;
+  background-color: #f8b7daa9;
+  margin-top: -37px;
+}
+
+.diagramContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram {
+  margin-top: 95px;
+}
+
+.diagramExplanation {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 154px;
+}
+
+.detail {
+  width: 260px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  margin: 5px;
+}
