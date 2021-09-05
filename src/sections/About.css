@@ -6,7 +6,7 @@
 
 .aboutContent {
   margin-top: 137px;
-  width: 572px;
+  width: 582px;
 }
 
 .heading {
@@ -46,7 +46,7 @@
 @media screen and (max-width: 1250px) {
   .illustration {
     width: 430px;
-    height: 420px;
+    height: 440px;
     margin-top: 57px;
   }
 
@@ -58,7 +58,7 @@
 @media screen and (max-width: 1190px) {
   .illustration {
     width: 430px;
-    height: 420px;
+    height: 430px;
     margin-top: 77px;
   }
 

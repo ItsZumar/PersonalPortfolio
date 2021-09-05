@@ -13,4 +13,5 @@ body {
 .AboutSec {
   background: url("./Image/backgroundImg.png");
   height: 911px;
+  z-index: -10;
 }
