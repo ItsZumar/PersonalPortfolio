@@ -46,6 +46,12 @@
   }
 }
 
+@media screen and (max-width: 1190px) {
+  .skills {
+    padding: 20px 70px;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .diagram {
     width: 600px;
@@ -65,7 +71,44 @@
   .style {
     width: 418px;
     height: 25px;
-    background-color: #f8b7daa9;
     margin-top: -33px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .diagram {
+    width: 400px;
+  }
+
+  .detail {
+    width: 140px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .SkillHeading {
+    font-size: 20px;
+  }
+
+  .style {
+    width: 310px;
+    height: 20px;
+    margin-top: -23px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .skills {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills {
+    margin-top: 40px;
+  }
+
+  .diagram {
+    width: 300px;
   }
 }
