@@ -1,0 +1,28 @@
+.footerLine {
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+  margin-top: 100px;
+}
+
+.developer {
+  font-size: 14px;
+}
+
+.copyRight {
+  font-size: 13px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 124px;
+}
+
+.githubLink {
+  margin-right: 22px;
+}
+.instaLink {
+  margin-right: 22px;
+}
