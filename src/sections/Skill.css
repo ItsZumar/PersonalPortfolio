@@ -39,3 +39,33 @@
   text-align: center;
   margin: 5px;
 }
+
+@media screen and (max-width: 1230px) {
+  .diagram {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .diagram {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .diagram {
+    width: 500px;
+  }
+
+  .SkillHeading {
+    font-size: 27px;
+    color: black;
+  }
+
+  .style {
+    width: 418px;
+    height: 25px;
+    background-color: #f8b7daa9;
+    margin-top: -33px;
+  }
+}

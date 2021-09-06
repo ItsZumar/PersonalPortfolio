@@ -25,3 +25,9 @@
   font-size: 16px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1200px) {
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+}
