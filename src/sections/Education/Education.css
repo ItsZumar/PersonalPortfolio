@@ -26,19 +26,37 @@
   width: 864px;
   height: 580px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.pole {
-  width: 38px;
-  height: 311px;
-  margin-right: 25px;
-}
-
-.educationInfo {
+.styling {
+  padding-top: 78px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+}
+
+.educationInfoSchool {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  line-height: 24px;
+  margin-right: 49px;
+}
+.educationInfoCllg {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  padding-right: 445px;
+  width: 355px;
+}
+.educationInfoUni {
+  width: 355px;
+  margin-right: 49px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
 }
 
 .year {
