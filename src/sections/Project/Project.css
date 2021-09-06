@@ -1,0 +1,78 @@
+.projectContainer {
+  padding: 20px 124px;
+  margin-top: 100px;
+}
+
+.projectHeading {
+  font-size: 32px;
+  color: black;
+}
+
+.projectStyle {
+  width: 170px;
+  height: 26px;
+  background-color: #f8b7daa9;
+  margin-top: -37px;
+  margin-bottom: 95px;
+}
+
+.Projects {
+  display: flex;
+}
+
+.ProjectEcommerce {
+  margin-right: 47px;
+  background: url("../../Image/eCommerceImg.png");
+  width: 260px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProjectTodoApp {
+  margin-right: 47px;
+  background: url("../../Image/TodoAppImg.png");
+  width: 260px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eCommerceHeading {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+
+.eCommerceDetail {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  width: 195px;
+}
+
+@media screen and (max-width: 930px) {
+  .projectHeading {
+    font-size: 27px;
+  }
+  .projectStyle {
+    width: 138px;
+    height: 25px;
+    margin-top: -33px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .projectHeading {
+    font-size: 20px;
+  }
+
+  .projectStyle {
+    width: 100px;
+    height: 20px;
+    margin-top: -23px;
+  }
+}

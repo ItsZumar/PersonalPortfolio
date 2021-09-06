@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
-import aboutContent from "../DummyData/About";
-import illutration from "../Image/girl-ill.png";
-import Card from "../Components/Card/Card";
+import illutration from "../../Image/girl-ill.png";
+import Card from "../../Components/Card/Card";
+const aboutContent = `<Hi there! I’m Zumar. />`;
 
 function About() {
   return (

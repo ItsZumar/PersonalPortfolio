@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skill.css";
-import diagram from "../Image/skillDiagram.png";
-import SkillCards from "../Components/SkillCards/SkillCards";
+import diagram from "../../Image/skillDiagram.png";
+import SkillCards from "../../Components/SkillCards/SkillCards";
 
 const heading = "<Skills / Tools and Technology />";
 

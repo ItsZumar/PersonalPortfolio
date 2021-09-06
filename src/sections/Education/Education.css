@@ -1,0 +1,52 @@
+.educationContainer {
+  padding: 20px 124px;
+  margin-top: 100px;
+}
+
+.educationHeading {
+  font-size: 32px;
+  color: black;
+}
+
+.educationStyle {
+  width: 208px;
+  height: 26px;
+  background-color: #f8b7daa9;
+  margin-top: -37px;
+  margin-bottom: 95px;
+}
+
+.educationContent {
+  width: 100%;
+  display: flex;
+}
+
+.educationDetail {
+  background: url("../../Image/penWithPole.png");
+  width: 864px;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pole {
+  width: 38px;
+  height: 311px;
+  margin-right: 25px;
+}
+
+.educationInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.year {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.InstitueName {
+  font-weight: 800;
+  font-size: 16px;
+}
