@@ -1,0 +1,60 @@
+.contactContainer {
+  padding: 20px 124px;
+  margin-top: 100px;
+}
+
+.contactHeading {
+  font-size: 32px;
+  color: black;
+}
+
+.contactStyle {
+  width: 176px;
+  height: 26px;
+  background-color: #f8b7daa9;
+  margin-top: -37px;
+  margin-bottom: 95px;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameField {
+  width: 519px;
+  height: 58px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: none;
+  font-family: inherit;
+  box-shadow: 0px 1px 7px #4b51ef;
+  margin-bottom: 17px;
+}
+
+.emailField {
+  width: 519px;
+  height: 58px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 1px 7px #4b51ef;
+  margin-bottom: 17px;
+  font-family: inherit;
+}
+
+.msgField {
+  width: 523px;
+  height: 164px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 1px 7px #4b51ef;
+  font-family: inherit;
+  padding-top: 15px;
+}
