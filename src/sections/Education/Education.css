@@ -69,3 +69,83 @@
   font-weight: 800;
   font-size: 16px;
 }
+
+@media screen and (max-width: 1190px) {
+  .educationContainer {
+    padding: 20px 70px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .educationDetail {
+    background: none;
+  }
+
+  .styling {
+    align-items: flex-start;
+  }
+  .educationInfoSchool {
+    margin-right: 0px;
+  }
+  .educationInfoCllg {
+    padding-right: 0px;
+  }
+
+  .educationInfoUni {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .educationHeading {
+    font-size: 27px;
+  }
+
+  .educationStyle {
+    width: 175px;
+    height: 25px;
+    margin-top: -33px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .educationContainer {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .educationHeading {
+    font-size: 20px;
+  }
+
+  .educationStyle {
+    width: 130px;
+    height: 20px;
+    margin-top: -23px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .year {
+    font-size: 16px;
+  }
+
+  .InstitueName {
+    font-size: 14px;
+  }
+
+  .studyDetail {
+    font-size: 14px;
+  }
+
+  .educationInfoSchool {
+    width: 250px;
+  }
+  .educationInfoCllg {
+    width: 250px;
+  }
+  .educationInfoUni {
+    width: 250px;
+  }
+}

@@ -7,14 +7,18 @@ const aboutContent = `<Hi there! I’m Zumar. />`;
 function About() {
   return (
     <>
-      <div className="about">
+      <div className="about" id="aboutSec1">
         <div className="aboutContent">
           <h1 className="heading">{aboutContent}</h1>
           <p className="paragraph">
             I’m a software engineer from Rawalpindi, PK. I’m also a FrontEnd
             Developer & I make elegantly professional Web designs.
           </p>
-          <button className="contactBtn">Contact Us</button>
+          <button className="contactBtn">
+            <a href="#contactSec5" className="contactLink">
+              Contact Us
+            </a>
+          </button>
         </div>
 
         <div className="aboutImg">

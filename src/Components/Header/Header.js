@@ -29,11 +29,31 @@ function Header() {
       <nav className="nav">
         {(toggle || screenWidth > 800) && (
           <ul className="list">
-            <li className="listItem">About</li>
-            <li className="listItem">Skills</li>
-            <li className="listItem">Projects</li>
-            <li className="listItem">Education</li>
-            <li className="listItem">Contact Us</li>
+            <li className="listItem">
+              <a href="#aboutSec1" className="links">
+                About
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#skillSec2" className="links">
+                Skills
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#projectSec3" className="links">
+                Projects
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#educationSec4" className="links">
+                Education
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#contactSec5" className="links">
+                Contact Us
+              </a>
+            </li>
           </ul>
         )}
 

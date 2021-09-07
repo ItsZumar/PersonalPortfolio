@@ -24,37 +24,101 @@
 .inputFields {
   display: flex;
   flex-direction: column;
+  width: 519px;
 }
 
 .nameField {
-  width: 519px;
+  width: 100%;
   height: 58px;
   padding-left: 15px;
   font-size: 16px;
   border: none;
   font-family: inherit;
-  box-shadow: 0px 1px 7px #4b51ef;
+  box-shadow: 0px 1px 7px #4b50ef52;
   margin-bottom: 17px;
 }
 
 .emailField {
-  width: 519px;
+  /* width: 519px; */
+  width: 100%;
   height: 58px;
   padding-left: 15px;
   font-size: 16px;
   border: none;
-  box-shadow: 0px 1px 7px #4b51ef;
+  box-shadow: 0px 1px 7px #4b50ef52;
   margin-bottom: 17px;
   font-family: inherit;
 }
 
 .msgField {
-  width: 523px;
+  /* width: 519px; */
+  width: 100%;
   height: 164px;
   padding-left: 15px;
   font-size: 16px;
   border: none;
-  box-shadow: 0px 1px 7px #4b51ef;
+  box-shadow: 0px 1px 7px #4b50ef52;
   font-family: inherit;
   padding-top: 15px;
+}
+
+@media screen and (max-width: 1250px) {
+  .inputFields {
+    width: 400px;
+  }
+  .contactImg {
+    width: 500px;
+  }
+
+  .msgField {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .contactContainer {
+    padding: 20px 70px;
+  }
+  .contactImg {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .contactImg {
+    display: none;
+  }
+
+  .inputFields {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .contactHeading {
+    font-size: 27px;
+  }
+  .contactStyle {
+    width: 148px;
+    height: 25px;
+    margin-top: -33px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .contactHeading {
+    font-size: 20px;
+  }
+  .contactStyle {
+    width: 110px;
+    height: 20px;
+    margin-top: -25px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .contactContainer {
+    padding: 20px 30px;
+  }
 }
