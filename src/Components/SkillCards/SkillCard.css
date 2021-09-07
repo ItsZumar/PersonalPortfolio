@@ -7,7 +7,7 @@
 .skillCard {
   box-shadow: 0 2px 6px gray;
   padding: 10px 10px;
-  width: 132px;
+  width: 120px;
   height: 154px;
   display: flex;
   flex-direction: column;
