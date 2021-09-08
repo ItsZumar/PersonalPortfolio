@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import illutration from "../../Image/girl-ill.png";
 import Card from "../../Components/Card/Card";
+
 const aboutContent = `<Hi there! I’m Zumar. />`;
 
 function About() {
@@ -9,7 +10,9 @@ function About() {
     <>
       <div className="about" id="aboutSec1">
         <div className="aboutContent">
-          <h1 className="heading">{aboutContent}</h1>
+          <h1 data-text={aboutContent} className="heading">
+            {aboutContent}
+          </h1>
           <p className="paragraph">
             I’m a software engineer from Rawalpindi, PK. I’m also a FrontEnd
             Developer & I make elegantly professional Web designs.

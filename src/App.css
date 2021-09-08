@@ -8,10 +8,10 @@ body {
 
 .App {
   width: 100%;
+  z-index: -10;
 }
 
 .AboutSec {
   background: url("./Image/backgroundImg.png");
   height: 911px;
-  z-index: -10;
 }

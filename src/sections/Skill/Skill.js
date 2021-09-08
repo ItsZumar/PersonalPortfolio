@@ -8,8 +8,10 @@ const heading = "<Skills / Tools and Technology />";
 function Skill() {
   return (
     <div className="skills" id="skillSec2">
-      <h1 className="SkillHeading">{heading}</h1>
-      <div className="style"></div>
+      <div className="headingCont">
+        <h1 className="SkillHeading">{heading}</h1>
+        <div className="style"></div>
+      </div>
       <div className="diagramContainer">
         <img src={diagram} alt="#" className="diagram" />
       </div>

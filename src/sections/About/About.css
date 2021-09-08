@@ -13,6 +13,37 @@
   font-size: 50px;
   color: white;
   font-weight: 600;
+  /* position: relative;
+  font-size: 3vw;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 0.1vw rgba(255, 255, 255, 0.267);
+  text-transform: uppercase; */
+}
+
+/* .heading::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #fff;
+  -webkit-text-stroke: 0vw rgba(255, 255, 255, 0);
+  border-right: 5px solid;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+} */
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 
 .paragraph {
@@ -47,6 +78,7 @@
   width: 468px;
   height: 486px;
   margin-top: 77px;
+  z-index: 0;
 }
 
 .container {
