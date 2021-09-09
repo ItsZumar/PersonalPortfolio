@@ -2,13 +2,16 @@
   padding: 20px 124px;
 }
 
+.headingCont {
+  margin-bottom: 70px;
+}
+
 .SkillHeading {
   font-size: 32px;
   color: black;
 }
 
 .style {
-  /* display: none; */
   width: 500px;
   height: 28px;
   background-color: #f8b7daa9;
@@ -30,7 +33,7 @@
   display: flex;
   display: flex;
   justify-content: center;
-  margin-bottom: 154px;
+  /* margin-bottom: 154px; */
 }
 
 .detail {

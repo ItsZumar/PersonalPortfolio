@@ -12,6 +12,7 @@ function Skill() {
         <h1 className="SkillHeading">{heading}</h1>
         <div className="style"></div>
       </div>
+      <SkillCards />
       <div className="diagramContainer">
         <img src={diagram} alt="#" className="diagram" />
       </div>
@@ -28,7 +29,7 @@ function Skill() {
           Developing fast web applications for seamless user interaction.
         </p>
       </div>
-      <SkillCards />
+      {/* <SkillCards /> */}
     </div>
   );
 }

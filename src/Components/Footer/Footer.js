@@ -14,9 +14,15 @@ function Footer() {
           <h1 className="copyRight">Copyright © 2019. All rights reserved</h1>
         </div>
         <div className="footerLinks">
-          <img src={githubLink} alt="#" className="githubLink" />
-          <img src={instaLink} alt="#" className="instaLink" />
-          <img src={twitterLink} alt="#" />
+          <a href="https://github.com/">
+            <img src={githubLink} alt="#" className="githubLink" />
+          </a>
+          <a href="#">
+            <img src={instaLink} alt="#" className="instaLink" />
+          </a>
+          <a href="https://twitter.com/home">
+            <img src={twitterLink} alt="#" />
+          </a>
         </div>
       </div>
     </>

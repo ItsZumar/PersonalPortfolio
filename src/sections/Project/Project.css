@@ -18,11 +18,17 @@
 
 .Projects {
   display: flex;
+  justify-content: space-between;
 }
 
 .ProjectEcommerce {
-  margin-right: 47px;
-  background: url("../../Image/eCommerceImg.png");
+  background-image: linear-gradient(
+      rgba(248, 53, 118, 0.8),
+      rgba(250, 4, 66, 0.8)
+    ),
+    url("../../Image/eCommerce.png");
+  background-size: cover;
+  background-position: center;
   width: 260px;
   height: 189px;
   display: flex;
@@ -30,20 +36,89 @@
   align-items: center;
   justify-content: center;
 }
+
+.ProjectEcommerce:hover .eCommerceDetail {
+  font-size: 0px;
+}
+
+.ProjectEcommerce:hover {
+  background: none;
+  background-color: rgb(189, 0, 63);
+}
+
 .ProjectTodoApp {
-  margin-right: 47px;
-  background: url("../../Image/TodoAppImg.png");
+  background-image: linear-gradient(
+      rgba(114, 103, 0, 0.664),
+      rgba(97, 79, 0, 0.6)
+    ),
+    url("../../Image/todo.png");
+  background-size: cover;
+  background-position: center;
   width: 260px;
   height: 189px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.ProjectPortfolio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(24, 24, 24, 0.8)),
+    url("../../Image/portfolio.png");
+  background-size: cover;
+  background-position: center;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 189px;
+}
+
+.ProjectCalculator {
+  background-image: linear-gradient(
+      rgba(80, 77, 221, 0.7),
+      rgba(196, 18, 202, 0.7)
+    ),
+    url("../../Image/calculator.png");
+  background-size: cover;
+  background-position: center;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 189px;
+}
+
+.ProjectCalculator:hover {
+  background: none;
+  background-color: rgb(196, 18, 202);
+}
+
+.ProjectPortfolio:hover {
+  background: none;
+  background-color: black;
+}
+.ProjectPortfolio:hover .eCommerceDetail {
+  font-size: 0;
+}
+.ProjectCalculator:hover .eCommerceDetail {
+  font-size: 0;
+}
+
+.ProjectTodoApp:hover {
+  background: none;
+  background: rgb(102, 102, 1);
+}
+
+.ProjectTodoApp:hover .eCommerceDetail {
+  font-size: 0;
 }
 
 .eCommerceHeading {
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -54,9 +129,50 @@
   width: 195px;
 }
 
+.workingProject {
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgb(196, 196, 196);
+  margin-top: 20px;
+  width: 300px;
+}
+
+.workingProject:hover .btnLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.btnLinks {
+  display: none;
+  width: 90px;
+  height: 40px;
+  border: none;
+  margin: 10px;
+}
+
+.btnIcon {
+  width: 30px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1230px) {
+  .Projects {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 1190px) {
   .projectContainer {
     padding: 20px 70px;
+  }
+  .workingProject {
+    width: 100%;
   }
 }
 

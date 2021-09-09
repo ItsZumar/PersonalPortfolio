@@ -28,7 +28,7 @@
 }
 
 .nameField {
-  width: 100%;
+  width: 96%;
   height: 58px;
   padding-left: 15px;
   font-size: 16px;
@@ -40,7 +40,7 @@
 
 .emailField {
   /* width: 519px; */
-  width: 100%;
+  width: 96%;
   height: 58px;
   padding-left: 15px;
   font-size: 16px;
@@ -52,7 +52,7 @@
 
 .msgField {
   /* width: 519px; */
-  width: 100%;
+  width: 96%;
   height: 164px;
   padding-left: 15px;
   font-size: 16px;
