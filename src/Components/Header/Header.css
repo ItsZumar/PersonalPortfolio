@@ -56,6 +56,9 @@ body {
   width: 30px;
   background-color: aliceblue;
   border-radius: 50px;
+  position: relative;
+  right: 20px;
+  top: -7px;
 }
 
 .links {
@@ -94,9 +97,13 @@ body {
   .listItem {
     padding: 20px;
     margin-right: 0px;
-    border-top: 1px solid rgba(177, 175, 175, 0.685);
-    width: 100%;
+    border-top: 1px solid rgba(177, 175, 175, 0.411);
+    width: 85%;
     text-align: center;
+  }
+
+  .listItem:hover {
+    background-color: rgba(146, 146, 146, 0.329);
   }
 
   .links {
