@@ -1,3 +1,24 @@
+import { badgeVariants } from "@/components/ui/badge";
+import { NAVIGATION_ITEMS } from "@/lib/constants";
+import { VariantProps } from "class-variance-authority";
+
+export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof badgeVariants> {}
+
+export interface SectionHeadingProps {
+  title: string;
+  subtitle?: string;
+  className?: string;
+}
+
+export type NavigationItem = (typeof NAVIGATION_ITEMS)[number];
+
+export interface NavigationProps {
+  activeSection: string;
+  isMenuOpen: boolean;
+  setIsMenuOpen: (isOpen: boolean) => void;
+  scrollToSection: (sectionId: string) => void;
+}
+
 export interface HeroProps {
   scrollToSection: (sectionId: string) => void;
 }
@@ -21,4 +42,8 @@ export interface BinaryStream {
   delay: number;
   fontSize?: number;
   content: string[];
+}
+
+export interface HeroProps {
+  scrollToSection: (sectionId: string) => void;
 }

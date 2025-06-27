@@ -4,14 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { CONTACT_LINKS, CODE_SYMBOLS, PROGRAMMING_KEYWORDS, TECH_STACK, BINARY_STREAMS } from "@/lib/constants";
 import type { ContactLink, CodeSymbol, BinaryStream } from "@/lib/types";
-
-interface HeroProps {
-  scrollToSection: (sectionId: string) => void;
-}
+import { HeroProps } from "@/interface";
 
 // Components
 const ContactLink = ({ link }: { link: ContactLink }) => {
-  const baseClasses = "flex items-center gap-2 text-slate-600 transition-all duration-300 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-slate-200";
+  const baseClasses =
+    "flex items-center gap-2 text-slate-600 transition-all duration-300 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-slate-200";
   const linkClasses = `${baseClasses} ${link.hoverColor} ${link.shadowColor} hover:shadow-lg hover:-translate-y-1`;
 
   if (link.external) {

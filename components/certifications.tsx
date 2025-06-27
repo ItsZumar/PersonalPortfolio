@@ -1,48 +1,14 @@
 "use client";
 
+import { certifications } from "@/lib/constants";
 import { Calendar, ExternalLink } from "lucide-react";
+import SectionHeading from "@/components/ui/section-heading";
 
 export default function Certifications() {
-  const certifications = [
-    {
-      title: "The Complete Node.js Developer Course",
-      year: "2020",
-      icon: "🟢",
-      category: "Backend Development",
-      skills: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
-      color: "from-green-400 to-emerald-500",
-      bgColor: "from-green-50 to-emerald-50",
-      borderColor: "border-green-200",
-    },
-    {
-      title: "Node.js, Express.js, MongoDB Bootcamp",
-      year: "2020",
-      icon: "🚀",
-      category: "Full-Stack Development",
-      skills: ["CRUD Operations", "Authentication", "Database Design", "API Development"],
-      color: "from-blue-400 to-cyan-500",
-      bgColor: "from-blue-50 to-cyan-50",
-      borderColor: "border-blue-200",
-    },
-    {
-      title: "Advanced CSS and Sass: Flexbox, Grid, Animations",
-      year: "2020",
-      icon: "🎨",
-      category: "Frontend Styling",
-      skills: ["CSS Grid", "Flexbox", "Sass", "Animations", "Responsive Design"],
-      color: "from-purple-400 to-pink-500",
-      bgColor: "from-purple-50 to-pink-50",
-      borderColor: "border-purple-200",
-    },
-  ];
-
   return (
     <section id="certifications" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Certifications</h2>
-          <p className="text-xl text-slate-600">Professional development and learning</p>
-        </div>
+        <SectionHeading title="Certifications" subtitle="Professional development and learning" />
 
         {/* Certifications Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">

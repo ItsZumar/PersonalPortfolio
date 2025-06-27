@@ -2,6 +2,8 @@ import React from "react";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 import type { ContactLink, CodeSymbol, BinaryStream, ExperienceItem, EducationItem, CertificationItem, SkillItem } from "./types";
 
+export const NAVIGATION_ITEMS = ["About", "Skills", "Experience", "Education", "Certifications", "Contact"] as const;
+
 // Contact Links
 export const CONTACT_LINKS: ContactLink[] = [
   {
@@ -106,91 +108,194 @@ export const BINARY_STREAMS: BinaryStream[] = [
   },
 ];
 
+// About us Constants
+export const STATS_DATA = [
+  { value: "4+", label: "Years of Study", sublabel: "Computer Science", color: "blue" },
+  { value: "1+", label: "Years Experience", sublabel: "Professional Work", color: "green" },
+  { value: "5+", label: "Projects Built", sublabel: "Mobile & Web Apps", color: "purple" },
+  { value: "15+", label: "Technologies", sublabel: "Mastered", color: "orange" },
+] as const;
+
+export const SERVICES_DATA = [
+  {
+    icon: "📱",
+    title: "Mobile Development",
+    description: "Building cross-platform mobile apps with React Native",
+    color: "from-blue-500 to-cyan-500",
+  },
+  {
+    icon: "🌐",
+    title: "Web Development",
+    description: "Creating responsive web applications with modern frameworks",
+    color: "from-green-500 to-emerald-500",
+  },
+  {
+    icon: "⚙️",
+    title: "Backend Development",
+    description: "Developing robust APIs and server-side applications",
+    color: "from-purple-500 to-violet-500",
+  },
+] as const;
+
+export const INTERESTS_DATA = [
+  { name: "Problem Solving", icon: "🧩" },
+  { name: "Learning", icon: "📚" },
+  { name: "Collaboration", icon: "🤝" },
+  { name: "Open Source", icon: "🌟" },
+  { name: "Clean Code", icon: "✨" },
+] as const;
+
 // Experience Data
-export const EXPERIENCE_DATA: ExperienceItem[] = [
-  {
-    title: "React Native Engineer",
-    company: "Yoocha",
-    period: "2023 - Present",
-    description: "Leading mobile app development using React Native, implementing complex UI components and integrating third-party APIs.",
-    technologies: ["React Native", "TypeScript", "Redux", "Firebase"],
-    logo: "/yoocha.png",
-  },
-  {
-    title: "Full-Stack Developer",
-    company: "Passfort",
-    period: "2022 - 2023",
-    description: "Developed web applications using modern JavaScript frameworks and worked on both frontend and backend systems.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    logo: "/passfort.png",
-  },
-  {
-    title: "Software Engineer",
-    company: "Expinco",
-    period: "2021 - 2022",
-    description: "Built scalable web applications and contributed to the development of microservices architecture.",
-    technologies: ["JavaScript", "Python", "PostgreSQL", "Docker"],
-    logo: "/expinco.png",
-  },
+export const experience = {
+  title: "React Native Engineer",
+  company: "Freelance",
+  location: "Islamabad, Pakistan",
+  period: "Jan 2023 - Present",
+  projects: [
+    {
+      name: "Passfort",
+      tech: ["React Native", "TypeScript", "Nest.js", "Node.js", "Express.js", "MongoDB"],
+      description:
+        "Built a Password Management Application with User Profiling and secure password storage for both Android and iOS platforms.",
+      link: "https://github.com/haseebthedev/passfort-frontend-mobile",
+      image: "/passfort.png",
+    },
+    {
+      name: "Expinco",
+      tech: ["React Native", "TypeScript", "Node.js", "Express.js", "MongoDB"],
+      description:
+        "Built an Expense Tracker Application with User Profiling, Income/Expense Transaction Management, and Wallet Management for both Android/iOS platforms.",
+      link: "https://github.com/ItsZumar/expinco-frontend-mobile",
+      image: "/expinco.png",
+    },
+    {
+      name: "Your-Helper",
+      tech: ["React Native", "TypeScript", "Node.js", "Express.js", "MongoDB", "Redux"],
+      description:
+        "Developed mobile application with reusable UI components, Redux state management, and REST API integration for Android/iOS platforms.",
+      link: "https://github.com/ItsZumar",
+      image: "/placeholder.svg",
+    },
+    {
+      name: "Yoocha",
+      tech: ["React Native", "TypeScript", "Nest.js", "MongoDB", "Redux", "Socket.io"],
+      description:
+        "Created a Chat Application with User Registration, Friend Request Management, Real-time Messaging, and push notifications.",
+      link: "https://github.com/haseebthedev/yoocha-frontend-mobile",
+      image: "/yoocha.png",
+    },
+    // {
+    //   name: "Palm Houses",
+    //   tech: ["Payload CMS", "Next.js", "Node.js", "TypeScript", "MongoDB", "XML", "REST API"],
+    //   description:
+    //     "Developed a Property Listing Platform with custom XML Importer, flexible mapping rules, and seamless Payload CMS integration.",
+    //   link: "https://github.com/ItsZumar",
+    //   image: "/placeholder.svg",
+    // },
+  ],
+};
+
+export const shadowColors = [
+  "hover:shadow-green-500/20",
+  "hover:shadow-purple-500/20",
+  "hover:shadow-red-500/20",
+  "hover:shadow-blue-500/20",
+  "hover:shadow-yellow-500/20",
 ];
 
 // Education Data
-export const EDUCATION_DATA: EducationItem[] = [
-  {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Engineering and Technology",
-    period: "2018 - 2022",
-    description: "Focused on software engineering, algorithms, and data structures. Completed capstone project on mobile app development.",
-    gpa: "3.8/4.0",
-  },
-];
+// Constants
+export const EDUCATION_DATA = {
+  degree: "Bachelor of Science in Computer Science",
+  abbreviation: "BSCS",
+  institution: "Rawalpindi Women University",
+  location: "📍 Islamabad, Pakistan",
+  duration: "Sep 2019 - Aug 2023",
+  description:
+    "Completed a comprehensive 4-year program focused on software development, algorithms, and modern computing technologies with hands-on experience in mobile and web application development.",
+} as const;
+
+export const COURSES_DATA = [
+  { name: "Database Systems", icon: "🗄️" },
+  { name: "Data Structures & Algorithms", icon: "🔗" },
+  { name: "Software Engineering", icon: "⚙️" },
+  { name: "Web Technologies", icon: "🌐" },
+  { name: "Mobile App Development", icon: "📱" },
+  { name: "Computer Science Concepts", icon: "💻" },
+] as const;
+
+export const SKILLS_DATA = [
+  "Problem Solving",
+  "Algorithm Design",
+  "Software Architecture",
+  "Database Design",
+  "System Analysis",
+  "Project Management",
+  "Team Collaboration",
+  "Technical Documentation",
+] as const;
 
 // Certifications Data
-export const CERTIFICATIONS_DATA: CertificationItem[] = [
+export const certifications = [
   {
-    name: "React Native Development",
-    issuer: "Meta",
-    date: "2023",
-    credentialId: "META-RN-2023",
-    url: "https://example.com/cert",
+    title: "The Complete Node.js Developer Course",
+    year: "2020",
+    icon: "🟢",
+    category: "Backend Development",
+    skills: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+    color: "from-green-400 to-emerald-500",
+    bgColor: "from-green-50 to-emerald-50",
+    borderColor: "border-green-200",
   },
   {
-    name: "Full Stack Web Development",
-    issuer: "freeCodeCamp",
-    date: "2022",
-    credentialId: "FCC-FSWD-2022",
+    title: "Node.js, Express.js, MongoDB Bootcamp",
+    year: "2020",
+    icon: "🚀",
+    category: "Full-Stack Development",
+    skills: ["CRUD Operations", "Authentication", "Database Design", "API Development"],
+    color: "from-blue-400 to-cyan-500",
+    bgColor: "from-blue-50 to-cyan-50",
+    borderColor: "border-blue-200",
   },
   {
-    name: "JavaScript Algorithms and Data Structures",
-    issuer: "freeCodeCamp",
-    date: "2021",
-    credentialId: "FCC-JS-2021",
+    title: "Advanced CSS and Sass: Flexbox, Grid, Animations",
+    year: "2020",
+    icon: "🎨",
+    category: "Frontend Styling",
+    skills: ["CSS Grid", "Flexbox", "Sass", "Animations", "Responsive Design"],
+    color: "from-purple-400 to-pink-500",
+    bgColor: "from-purple-50 to-pink-50",
+    borderColor: "border-purple-200",
   },
 ];
 
 // Skills Data
-export const SKILLS_DATA: SkillItem[] = [
-  // Frontend
-  { name: "React", level: 90, category: "frontend" },
-  { name: "React Native", level: 95, category: "mobile" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "HTML/CSS", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 80, category: "frontend" },
-  
-  // Backend
-  { name: "Node.js", level: 85, category: "backend" },
-  { name: "Express.js", level: 80, category: "backend" },
-  { name: "Python", level: 75, category: "backend" },
-  { name: "REST APIs", level: 85, category: "backend" },
-  
-  // Database
-  { name: "MongoDB", level: 80, category: "database" },
-  { name: "PostgreSQL", level: 75, category: "database" },
-  { name: "Firebase", level: 85, category: "database" },
-  
-  // Tools
-  { name: "Git", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "AWS", level: 65, category: "tools" },
-]; 
+export const skills = {
+  languages: [
+    { name: "JavaScript", icon: "⚡", color: "bg-yellow-100 border-yellow-300 text-yellow-800" },
+    { name: "TypeScript", icon: "🔷", color: "bg-blue-100 border-blue-300 text-blue-800" },
+  ],
+  frameworks: [
+    { name: "React", icon: "⚛️", color: "bg-cyan-100 border-cyan-300 text-cyan-800" },
+    { name: "React Native", icon: "📱", color: "bg-blue-100 border-blue-300 text-blue-800" },
+    { name: "Next.js", icon: "▲", color: "bg-slate-100 border-slate-300 text-slate-800" },
+    { name: "Node.js", icon: "🟢", color: "bg-green-100 border-green-300 text-green-800" },
+    { name: "Express.js", icon: "🚀", color: "bg-purple-100 border-purple-300 text-purple-800" },
+    { name: "Nest.js", icon: "🔴", color: "bg-red-100 border-red-300 text-red-800" },
+    { name: "Material UI", icon: "🎨", color: "bg-indigo-100 border-indigo-300 text-indigo-800" },
+    { name: "Tailwind CSS", icon: "💨", color: "bg-teal-100 border-teal-300 text-teal-800" },
+    { name: "Socket.io", icon: "🔌", color: "bg-orange-100 border-orange-300 text-orange-800" },
+    { name: "React Router", icon: "🛣️", color: "bg-pink-100 border-pink-300 text-pink-800" },
+    { name: "Redux", icon: "🔄", color: "bg-violet-100 border-violet-300 text-violet-800" },
+    { name: "Framer Motion", icon: "✨", color: "bg-amber-100 border-amber-300 text-amber-800" },
+  ],
+  tools: [
+    { name: "Git", icon: "🌿", color: "bg-emerald-100 border-emerald-300 text-emerald-800" },
+    { name: "Postman", icon: "📮", color: "bg-orange-100 border-orange-300 text-orange-800" },
+    { name: "Firebase", icon: "🔥", color: "bg-red-100 border-red-300 text-red-800" },
+    { name: "Figma", icon: "🎨", color: "bg-purple-100 border-purple-300 text-purple-800" },
+    { name: "Slack", icon: "💬", color: "bg-green-100 border-green-300 text-green-800" },
+    { name: "MongoDB Compass", icon: "🍃", color: "bg-lime-100 border-lime-300 text-lime-800" },
+    { name: "Payload CMS", icon: "📦", color: "bg-blue-100 border-blue-300 text-blue-800" },
+  ],
+};

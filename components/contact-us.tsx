@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import { CONTACT_LINKS } from "@/lib/constants";
 import type { ContactFormData, ContactLink } from "@/lib/types";
+import SectionHeading from "@/components/ui/section-heading";
 
 // Constants
 const INITIAL_FORM_DATA: ContactFormData = {
@@ -194,10 +195,7 @@ export default function ContactUs() {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Get In Touch</h2>
-          <p className="text-xl text-slate-600">Let's discuss your next project</p>
-        </div>
+        <SectionHeading title="Get In Touch" subtitle="Let's discuss your next project" />
 
         <ContactForm />
       </div>
