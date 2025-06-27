@@ -43,14 +43,14 @@ export default function Experience() {
         link: "https://github.com/haseebthedev/yoocha-frontend-mobile",
         image: "/yoocha.png",
       },
-      {
-        name: "Palm Houses",
-        tech: ["Payload CMS", "Next.js", "Node.js", "TypeScript", "MongoDB", "XML", "REST API"],
-        description:
-          "Developed a Property Listing Platform with custom XML Importer, flexible mapping rules, and seamless Payload CMS integration.",
-        link: "https://github.com/ItsZumar",
-        image: "/placeholder.svg",
-      },
+      // {
+      //   name: "Palm Houses",
+      //   tech: ["Payload CMS", "Next.js", "Node.js", "TypeScript", "MongoDB", "XML", "REST API"],
+      //   description:
+      //     "Developed a Property Listing Platform with custom XML Importer, flexible mapping rules, and seamless Payload CMS integration.",
+      //   link: "https://github.com/ItsZumar",
+      //   image: "/placeholder.svg",
+      // },
     ],
   };
 

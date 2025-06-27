@@ -12,6 +12,244 @@ body {
   }
 }
 
+/* Custom Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #2563eb;
+  }
+}
+
+@keyframes code-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+    opacity: 0.2;
+  }
+  75% {
+    transform: translateY(-30px) rotate(8deg);
+    opacity: 0.4;
+  }
+}
+
+@keyframes binary-scroll {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes pulse-code {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+}
+
+/* Animation Classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Custom Component Styles */
+.skill-circle {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-circle:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: brightness(1.1);
+}
+
+.nav-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.typing-animation {
+  overflow: hidden;
+  border-right: 2px solid #2563eb;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.code-symbol {
+  position: absolute;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  color: #3b82f6;
+  pointer-events: none;
+  user-select: none;
+}
+
+.code-float-1 {
+  animation: code-float 8s ease-in-out infinite;
+}
+.code-float-2 {
+  animation: code-float 10s ease-in-out infinite 2s;
+}
+.code-float-3 {
+  animation: code-float 12s ease-in-out infinite 4s;
+}
+.code-float-4 {
+  animation: code-float 9s ease-in-out infinite 1s;
+}
+.code-float-5 {
+  animation: code-float 11s ease-in-out infinite 3s;
+}
+
+.binary-stream {
+  position: absolute;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #10b981;
+  opacity: 0.1;
+  animation: binary-scroll 15s linear infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+.pulse-code {
+  animation: pulse-code 4s ease-in-out infinite;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
