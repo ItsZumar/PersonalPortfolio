@@ -184,24 +184,16 @@ export const experience = {
       link: "https://github.com/haseebthedev/yoocha-frontend-mobile",
       image: "/yoocha.png",
     },
-    // {
-    //   name: "Palm Houses",
-    //   tech: ["Payload CMS", "Next.js", "Node.js", "TypeScript", "MongoDB", "XML", "REST API"],
-    //   description:
-    //     "Developed a Property Listing Platform with custom XML Importer, flexible mapping rules, and seamless Payload CMS integration.",
-    //   link: "https://github.com/ItsZumar",
-    //   image: "/placeholder.svg",
-    // },
+    {
+      name: "Portfolio Website",
+      tech: ["React.js", "Javascript", "Node.js", "TypeScript"],
+      description:
+        "Designed and built a responsive Portfolio Website using React.js and TypeScript. Showcases personal projects and skills with clean UI and smooth navigation.",
+      link: "https://github.com/ItsZumar/PortfolioWebsite",
+      image: "/portfolio.png",
+    },
   ],
 };
-
-export const shadowColors = [
-  "hover:shadow-green-500/20",
-  "hover:shadow-purple-500/20",
-  "hover:shadow-red-500/20",
-  "hover:shadow-blue-500/20",
-  "hover:shadow-yellow-500/20",
-];
 
 // Education Data
 // Constants
@@ -243,7 +235,7 @@ export const certifications = [
     icon: "🟢",
     category: "Backend Development",
     skills: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
-    color: "from-green-400 to-emerald-500",
+    color: "bg-green-500",
     bgColor: "from-green-50 to-emerald-50",
     borderColor: "border-green-200",
   },
@@ -253,7 +245,7 @@ export const certifications = [
     icon: "🚀",
     category: "Full-Stack Development",
     skills: ["CRUD Operations", "Authentication", "Database Design", "API Development"],
-    color: "from-blue-400 to-cyan-500",
+    color: "bg-blue-500",
     bgColor: "from-blue-50 to-cyan-50",
     borderColor: "border-blue-200",
   },
@@ -263,7 +255,7 @@ export const certifications = [
     icon: "🎨",
     category: "Frontend Styling",
     skills: ["CSS Grid", "Flexbox", "Sass", "Animations", "Responsive Design"],
-    color: "from-purple-400 to-pink-500",
+    color: "bg-purple-500",
     bgColor: "from-purple-50 to-pink-50",
     borderColor: "border-purple-200",
   },

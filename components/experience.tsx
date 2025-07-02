@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
-import { experience, shadowColors } from "@/lib/constants";
+import { experience } from "@/lib/constants";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function Experience() {
@@ -14,6 +14,13 @@ export default function Experience() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experience.projects.map((project, index) => {
+            const shadowColors = [
+              "hover:shadow-green-500/20",
+              "hover:shadow-purple-500/20",
+              "hover:shadow-red-500/20",
+              "hover:shadow-blue-500/20",
+              "hover:shadow-yellow-500/20",
+            ];
             return (
               <a key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="block">
                 <Card
