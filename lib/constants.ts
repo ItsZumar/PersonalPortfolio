@@ -227,40 +227,6 @@ export const SKILLS_DATA = [
   "Technical Documentation",
 ] as const;
 
-// Certifications Data
-export const certifications = [
-  {
-    title: "The Complete Node.js Developer Course",
-    year: "2020",
-    icon: "🟢",
-    category: "Backend Development",
-    skills: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
-    color: "bg-green-500",
-    bgColor: "from-green-50 to-emerald-50",
-    borderColor: "border-green-200",
-  },
-  {
-    title: "Node.js, Express.js, MongoDB Bootcamp",
-    year: "2020",
-    icon: "🚀",
-    category: "Full-Stack Development",
-    skills: ["CRUD Operations", "Authentication", "Database Design", "API Development"],
-    color: "bg-blue-500",
-    bgColor: "from-blue-50 to-cyan-50",
-    borderColor: "border-blue-200",
-  },
-  {
-    title: "Advanced CSS and Sass: Flexbox, Grid, Animations",
-    year: "2020",
-    icon: "🎨",
-    category: "Frontend Styling",
-    skills: ["CSS Grid", "Flexbox", "Sass", "Animations", "Responsive Design"],
-    color: "bg-purple-500",
-    bgColor: "from-purple-50 to-pink-50",
-    borderColor: "border-purple-200",
-  },
-];
-
 // Skills Data
 export const skills = {
   languages: [
