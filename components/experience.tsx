@@ -18,8 +18,9 @@ export default function Experience() {
               "hover:shadow-green-500/20",
               "hover:shadow-purple-500/20",
               "hover:shadow-red-500/20",
-              "hover:shadow-blue-500/20",
+              "hover:shadow-blue-700/20",
               "hover:shadow-yellow-500/20",
+              "hover:shadow-blue-400/20",
             ];
             return (
               <a key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="block">

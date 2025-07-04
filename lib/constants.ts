@@ -192,6 +192,14 @@ export const experience = {
       link: "https://github.com/ItsZumar/PortfolioWebsite",
       image: "/portfolio.png",
     },
+    {
+      name: "Phone Lookup App",
+      tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js"],
+      description:
+        "Created Lookup App that lets users report and check spam or scam phone numbers—helping everyone stay safe from unwanted calls.",
+      link: "https://github.com/ItsZumar/phone-lookup-frontend",
+      image: "/lookup.png",
+    },
   ],
 };
 
@@ -226,34 +234,3 @@ export const SKILLS_DATA = [
   "Team Collaboration",
   "Technical Documentation",
 ] as const;
-
-// Skills Data
-export const skills = {
-  languages: [
-    { name: "JavaScript", icon: "⚡", color: "bg-yellow-100 border-yellow-300 text-yellow-800" },
-    { name: "TypeScript", icon: "🔷", color: "bg-blue-100 border-blue-300 text-blue-800" },
-  ],
-  frameworks: [
-    { name: "React", icon: "⚛️", color: "bg-cyan-100 border-cyan-300 text-cyan-800" },
-    { name: "React Native", icon: "📱", color: "bg-blue-100 border-blue-300 text-blue-800" },
-    { name: "Next.js", icon: "▲", color: "bg-slate-100 border-slate-300 text-slate-800" },
-    { name: "Node.js", icon: "🟢", color: "bg-green-100 border-green-300 text-green-800" },
-    { name: "Express.js", icon: "🚀", color: "bg-purple-100 border-purple-300 text-purple-800" },
-    { name: "Nest.js", icon: "🔴", color: "bg-red-100 border-red-300 text-red-800" },
-    { name: "Material UI", icon: "🎨", color: "bg-indigo-100 border-indigo-300 text-indigo-800" },
-    { name: "Tailwind CSS", icon: "💨", color: "bg-teal-100 border-teal-300 text-teal-800" },
-    { name: "Socket.io", icon: "🔌", color: "bg-orange-100 border-orange-300 text-orange-800" },
-    { name: "React Router", icon: "🛣️", color: "bg-pink-100 border-pink-300 text-pink-800" },
-    { name: "Redux", icon: "🔄", color: "bg-violet-100 border-violet-300 text-violet-800" },
-    { name: "Framer Motion", icon: "✨", color: "bg-amber-100 border-amber-300 text-amber-800" },
-  ],
-  tools: [
-    { name: "Git", icon: "🌿", color: "bg-emerald-100 border-emerald-300 text-emerald-800" },
-    { name: "Postman", icon: "📮", color: "bg-orange-100 border-orange-300 text-orange-800" },
-    { name: "Firebase", icon: "🔥", color: "bg-red-100 border-red-300 text-red-800" },
-    { name: "Figma", icon: "🎨", color: "bg-purple-100 border-purple-300 text-purple-800" },
-    { name: "Slack", icon: "💬", color: "bg-green-100 border-green-300 text-green-800" },
-    { name: "MongoDB Compass", icon: "🍃", color: "bg-lime-100 border-lime-300 text-lime-800" },
-    { name: "Payload CMS", icon: "📦", color: "bg-blue-100 border-blue-300 text-blue-800" },
-  ],
-};
