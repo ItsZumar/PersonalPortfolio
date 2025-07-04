@@ -100,7 +100,6 @@ export default function Certifications() {
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     <span className="text-xs text-slate-600">Verified Certificate</span>
                   </div>
-                  <ExternalLink size={16} className="text-slate-400 group-hover:text-slate-600 transition-colors duration-300" />
                 </div>
               </div>
 

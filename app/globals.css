@@ -217,6 +217,20 @@ body {
   color: #3b82f6;
   pointer-events: none;
   user-select: none;
+  font-size: 14px;
+}
+
+/* Mobile responsive styles for code symbols */
+@media (max-width: 768px) {
+  .code-symbol {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-symbol {
+    font-size: 12px;
+  }
 }
 
 .code-float-1 {
@@ -244,6 +258,19 @@ body {
   animation: binary-scroll 15s linear infinite;
   pointer-events: none;
   user-select: none;
+}
+
+/* Mobile responsive styles for binary streams */
+@media (max-width: 768px) {
+  .binary-stream {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .binary-stream {
+    font-size: 10px;
+  }
 }
 
 .pulse-code {
