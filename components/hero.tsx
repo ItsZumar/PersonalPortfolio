@@ -109,10 +109,9 @@ const HeroContent = ({ scrollToSection }: { scrollToSection: (sectionId: string)
         <Button onClick={() => scrollToSection("contact")} size="lg" className="bg-blue-600 hover:bg-blue-700">
           Get In Touch
         </Button>
-        <a href="/ZumarSaeed_RN.pdf" download>
+        <a href="/ZumarSaeed_RN.pdf" target="_blank" rel="noopener noreferrer">
           <Button variant="outline" size="lg" className="bg-white text-slate-700 border-slate-300 hover:bg-slate-50">
-            <Download size={20} className="mr-2" />
-            Download CV
+            Resume
           </Button>
         </a>
       </div>

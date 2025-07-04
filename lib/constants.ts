@@ -7,17 +7,6 @@ export const NAVIGATION_ITEMS = ["About", "Skills", "Experience", "Education", "
 // Contact Links
 export const CONTACT_LINKS: ContactLink[] = [
   {
-    href: "tel:+923281369894",
-    icon: React.createElement(Phone, { size: 20 }),
-    title: "Phone",
-    value: "+92 328 1369894",
-    text: "+92 328 1369894",
-    hoverColor: "hover:text-yellow-600",
-    shadowColor: "hover:shadow-yellow-500/20",
-    bgColor: "bg-yellow-100",
-    iconColor: "text-yellow-600",
-  },
-  {
     href: "mailto:zumarsaeed17@gmail.com",
     icon: React.createElement(Mail, { size: 20 }),
     title: "Email",
