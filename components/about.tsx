@@ -20,9 +20,9 @@ const BackgroundDecorations = () => (
 const InfoCard = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <div className="relative">
     <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg opacity-20 blur"></div>
-    <div className="relative bg-white p-6 rounded-lg shadow-sm border border-slate-100">
-      <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-        <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+    <div className="relative bg-white p-4 sm:p-6 rounded-lg shadow-sm border border-slate-100">
+      <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-3 sm:mb-4 flex items-center gap-2 sm:gap-3">
+        <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
         {title}
       </h3>
       {children}
@@ -43,10 +43,10 @@ const StatCard = ({ value, label, sublabel, color }: (typeof STATS_DATA)[number]
 
   return (
     <div
-      className={`bg-gradient-to-br ${bgGradient} p-6 rounded-xl border ${borderColor} hover:shadow-lg transition-all duration-300 group`}
+      className={`bg-gradient-to-br ${bgGradient} p-4 sm:p-6 rounded-xl border ${borderColor} hover:shadow-lg transition-all duration-300 group`}
     >
-      <div className={`text-3xl font-bold ${valueColor} mb-2 group-hover:scale-110 transition-transform duration-300`}>{value}</div>
-      <div className={`text-sm font-semibold ${labelColor}`}>{label}</div>
+      <div className={`text-2xl sm:text-3xl font-bold ${valueColor} mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300`}>{value}</div>
+      <div className={`text-xs sm:text-sm font-semibold ${labelColor}`}>{label}</div>
       <div className={`text-xs ${sublabelColor} mt-1`}>{sublabel}</div>
     </div>
   );
@@ -54,30 +54,30 @@ const StatCard = ({ value, label, sublabel, color }: (typeof STATS_DATA)[number]
 
 // Service Item Component
 const ServiceItem = ({ icon, title, description, color }: (typeof SERVICES_DATA)[number]) => (
-  <div className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-all duration-300 group">
-    <div className="text-2xl group-hover:scale-110 transition-transform duration-300">{icon}</div>
+  <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-lg hover:shadow-md transition-all duration-300 group">
+    <div className="text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-300">{icon}</div>
     <div className="flex-1">
       <h4
-        className={`font-semibold bg-gradient-to-r ${color} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300 origin-left`}
+        className={`text-sm sm:text-base font-semibold bg-gradient-to-r ${color} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300 origin-left`}
       >
         {title}
       </h4>
-      <p className="text-sm text-slate-600 mt-1">{description}</p>
+      <p className="text-xs sm:text-sm text-slate-600 mt-1">{description}</p>
     </div>
   </div>
 );
 
 // Interest Tag Component
 const InterestTag = ({ name, icon }: (typeof INTERESTS_DATA)[number]) => (
-  <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-indigo-200 hover:border-indigo-400 hover:shadow-md transition-all duration-300 group cursor-default">
-    <span className="group-hover:scale-110 transition-transform duration-300">{icon}</span>
-    <span className="text-sm font-medium text-indigo-700 group-hover:text-indigo-800">{name}</span>
+  <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-indigo-200 hover:border-indigo-400 hover:shadow-md transition-all duration-300 group cursor-default">
+    <span className="text-sm sm:text-base group-hover:scale-110 transition-transform duration-300">{icon}</span>
+    <span className="text-xs sm:text-sm font-medium text-indigo-700 group-hover:text-indigo-800">{name}</span>
   </div>
 );
 
 // Stats Section Component
 const StatsSection = () => (
-  <div className="grid grid-cols-2 gap-6">
+  <div className="grid grid-cols-2 gap-4 sm:gap-6">
     {STATS_DATA.map((stat, index) => (
       <StatCard key={index} {...stat} />
     ))}
@@ -86,12 +86,12 @@ const StatsSection = () => (
 
 // Services Section Component
 const ServicesSection = () => (
-  <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-xl border border-slate-200 shadow-lg">
-    <h3 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
-      <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-blue-500 rounded-full"></div>
+  <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-6 sm:p-8 rounded-xl border border-slate-200 shadow-lg">
+    <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gradient-to-r from-green-500 to-blue-500 rounded-full"></div>
       What I Do
     </h3>
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       {SERVICES_DATA.map((service, index) => (
         <ServiceItem key={index} {...service} />
       ))}
@@ -101,12 +101,12 @@ const ServicesSection = () => (
 
 // Interests Section Component
 const InterestsSection = () => (
-  <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-xl border border-indigo-200 shadow-lg">
-    <h3 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
-      <div className="w-3 h-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+  <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 sm:p-8 rounded-xl border border-indigo-200 shadow-lg">
+    <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
       Beyond Code
     </h3>
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-2 sm:gap-3">
       {INTERESTS_DATA.map((interest, index) => (
         <InterestTag key={index} {...interest} />
       ))}
@@ -122,18 +122,18 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading title="About Me" />
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left side - Profile info */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <InfoCard title="Who I Am">
-              <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-4 sm:mb-6">
                 A passionate <span className="font-semibold text-blue-600">Computer Science graduate</span> with expertise in mobile and web
                 development. I specialize in creating efficient, user-friendly applications using modern technologies like{" "}
                 <span className="font-semibold text-green-600">React Native</span>,{" "}
                 <span className="font-semibold text-blue-600">TypeScript</span>, and{" "}
                 <span className="font-semibold text-green-600">Node.js</span>.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                 I'm driven by the challenge of solving complex problems and turning innovative ideas into reality through clean, scalable
                 code.
               </p>
@@ -143,7 +143,7 @@ export default function About() {
           </div>
 
           {/* Right side - Skills and interests */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <ServicesSection />
             <InterestsSection />
           </div>

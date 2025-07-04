@@ -87,17 +87,17 @@ const ContactForm = () => {
   return (
     <div className="max-w-2xl mx-auto mb-16">
       <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl text-center">Send Me a Message</CardTitle>
-          <CardDescription className="text-center">
+        <CardHeader className="pb-4 sm:pb-6">
+          <CardTitle className="text-xl sm:text-2xl text-center">Send Me a Message</CardTitle>
+          <CardDescription className="text-center text-sm sm:text-base">
             I'd love to hear about your project. Fill out the form below and I'll get back to you soon.
           </CardDescription>
         </CardHeader>
-        <CardContent className="p-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+        <CardContent className="p-4 sm:p-8">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-slate-700 mb-1.5 sm:mb-2">
                   Full Name *
                 </label>
                 <Input
@@ -107,12 +107,12 @@ const ContactForm = () => {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full"
+                  className="w-full text-sm sm:text-base"
                   placeholder="Your full name"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-slate-700 mb-1.5 sm:mb-2">
                   Email Address *
                 </label>
                 <Input
@@ -122,14 +122,14 @@ const ContactForm = () => {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full"
+                  className="w-full text-sm sm:text-base"
                   placeholder="your.email@example.com"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
+              <label htmlFor="subject" className="block text-xs sm:text-sm font-medium text-slate-700 mb-1.5 sm:mb-2">
                 Subject *
               </label>
               <Input
@@ -139,33 +139,33 @@ const ContactForm = () => {
                 required
                 value={formData.subject}
                 onChange={handleInputChange}
-                className="w-full"
+                className="w-full text-sm sm:text-base"
                 placeholder="What's this about?"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+              <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-slate-700 mb-1.5 sm:mb-2">
                 Message *
               </label>
               <Textarea
                 id="message"
                 name="message"
-                rows={6}
+                rows={5}
                 required
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full resize-none"
+                className="w-full resize-none text-sm sm:text-base"
                 placeholder="Tell me about your project, timeline, and any specific requirements..."
               />
             </div>
 
-            <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700" disabled={isSubmitting}>
+            <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-sm sm:text-base" disabled={isSubmitting}>
               {isSubmitting ? (
                 "Sending..."
               ) : (
                 <>
-                  <Send size={20} className="mr-2" />
+                  <Send size={18} className="mr-2" />
                   Send Message
                 </>
               )}
